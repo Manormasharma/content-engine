@@ -38,7 +38,7 @@ if generate_btn:
                     
                     with col2:
                         st.markdown(f"### 📝 Generated Content")
-                        st.text_area("Ready to copy:", value=data["content"], height=250)
+                        st.text_area("Ready to copy:", value=data["content"], height=550)
                         
                         if data.get("image_url"):
                             st.markdown("### 🎨 AI-Generated Gemini Graphic")

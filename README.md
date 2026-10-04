@@ -4,6 +4,13 @@ An enterprise-grade, containerized AI microservice and web application that auto
 
 ---
 
+## 📸 UI Preview
+Here is what the Streamlit user interface looks like when running locally:
+
+![Streamlit UI Preview](Preview.png)
+
+---
+
 ## 📖 About the Project
 
 Writing high-quality technical content, research briefs, or viral social media posts usually requires hours of manual web research, fact-checking, and drafting. 
