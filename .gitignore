@@ -1,0 +1,13 @@
+# Environment secrets
+.env
+
+# Python virtual environment & cache
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# Generated static images or logs
+app/static/*.png
+logs/

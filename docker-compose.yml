@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  content-engine:
+    build: .
+    container_name: content_engine_backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    restart: unless-stopped
+
+  frontend:
+    build: .
+    container_name: content_engine_frontend
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    command: ["streamlit", "run", "app/frontend.py", "--server.port=8501", "--server.address=0.0.0.0"]
+    depends_on:
+      - content-engine
+    restart: unless-stopped
